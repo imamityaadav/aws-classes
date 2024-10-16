@@ -1,7 +1,5 @@
- sudo adduser kumar
-    2  sudo usermod -aG sudo kumar
-    3  sudo nano /etc/ssh/sshd_config
-    4  sudo systemctl restart ssh
-    5  sudo nano /etc/ssh/sshd_config
-    6  sudo systemctl restart ssh
-    7  sudo systemctl restart ssh.service
+ sudo adduser <user-name>
+ sudo usermod -aG sudo <user-name>
+ sudo nano /etc/ssh/sshd_config -- change  Passwordauth to yes and kbdinteractiveauth yes 
+ sudo systemctl restart ssh
+ sudo systemctl restart ssh.service
