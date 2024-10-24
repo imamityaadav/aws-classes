@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: blusmart-eks-client-server.
+Description: eks-client-server.
 Parameters:
   VpcId:
     Description: Select your VPC Id.
