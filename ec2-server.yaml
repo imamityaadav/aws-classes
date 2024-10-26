@@ -86,20 +86,16 @@ Resources:
       InstanceType: !Ref InstanceType
       KeyName: !Ref SshServerKeyName
       Monitoring: 'false'
-      Tags:
-        - Key: Name
-          Value: !Ref 'AWS::StackName'
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs:
             DeleteOnTermination: 'true'
             VolumeSize: !Ref Ec2RootVolumeSize
             Encrypted: 'true'
-            VolumeType: "gp3"
-            
+            VolumeType: "gp3"            
       Tags:
         - Key: Name
-          Value: !Ref InstanceName
+          Value: !Ref InstanceName1
         - Key: appname
           Value: !Ref Appname
         - Key: businessunit
